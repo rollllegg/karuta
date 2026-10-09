@@ -58,6 +58,8 @@ node e2e/local-decks-verify.mjs
 
 截图保存到 `frontend/baseline/local-test/`。如使用 Edge，可先设置 `$env:QA_BROWSER_CHANNEL = 'msedge'`；自定义前端端口时设置 `QA_BASE_URL`。测试账号或密码改过后，使用 `QA_USERNAME` / `QA_PASSWORD`。
 
+「我的歌牌」的批量归类可运行 `node e2e/local-category-verify.mjs` 验收。脚本在本地注册独立验收账号，并创建、归类和清理三张临时歌牌，检查圆圈勾选、保留原标签、私有分类、筛选与刷新后的保存结果。截图保存到 `frontend/baseline/local-category/`。
+
 还可以试听提示音、编辑名称、添加歌牌、复制牌组，或用示例牌组创建自动模式房间。测试媒体是程序生成的封面和提示音；需要真实歌曲时，可从牌库上传自己的封面与音频。
 
 ## 手动启动（其他系统也适用）
